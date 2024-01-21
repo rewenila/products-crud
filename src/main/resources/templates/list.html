@@ -22,7 +22,7 @@
         <tr th:each="product : ${products}">
             <td th:text="${product.code}"></td>
             <td th:text="${product.name}"></td>
-            <td th:text="${product.description}"></td>
+            <td th:text="${product.description}" style="width: 40%"></td>
             <td th:text="${product.price}"></td>
             <td>
                 <a th:href="@{/products/{id}(id=${product.id})}">Ver</a>
